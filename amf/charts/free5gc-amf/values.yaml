@@ -59,11 +59,11 @@ amf:
     name: towards5gs/free5gc-amf
     pullPolicy: Always
   service:
-    name: amf2-namf
+    name: amf-namf
     type: ClusterIP
     port: 80
   configmap:
-    name: amf2-configmap
+    name: amf-configmap
   volume:
     name: amf-volume
     mount: /free5gc/config/
